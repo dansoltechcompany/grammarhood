@@ -1,8 +1,12 @@
 import Link from "next/link";
+import { HomeSampleQuestion } from "@/components/HomeSampleQuestion";
 import { HomeStats } from "@/components/HomeStats";
 import { TopicList } from "@/components/TopicList";
+import { QUESTIONS } from "@/content/questions";
 import { liveTopics } from "@/content/topics";
 import type { Topic } from "@/lib/types";
+
+const SAMPLE_QUESTION_ID = "art-01";
 
 const START_HERE_IDS = [
   "a-an-the",
@@ -38,6 +42,7 @@ export default function HomePage() {
   const startHere = START_HERE_IDS.map((id) => live.find((topic) => topic.id === id)).filter(
     (topic): topic is Topic => topic !== undefined,
   );
+  const sample = QUESTIONS.find((question) => question.id === SAMPLE_QUESTION_ID);
 
   return (
     <div className="space-y-16">
@@ -56,6 +61,16 @@ export default function HomePage() {
         </ol>
       </section>
 
+      {sample ? (
+        <section>
+          <div className="mb-4">
+            <h2 className="font-[family-name:var(--font-display)] text-2xl">A question looks like this</h2>
+            <p className="mt-1 text-sm text-muted">One real item. Miss it, and you get the rule in one line.</p>
+          </div>
+          <HomeSampleQuestion question={sample} />
+        </section>
+      ) : null}
+
       <section>
         <div className="mb-4">
           <h2 className="font-[family-name:var(--font-display)] text-2xl">Start here</h2>
@@ -67,6 +82,12 @@ export default function HomePage() {
           </p>
         </div>
         <TopicList topics={startHere} />
+        <Link
+          href="/practice"
+          className="mt-6 inline-flex rounded-lg bg-accent px-6 py-3 text-sm font-medium text-white hover:bg-accent-dark"
+        >
+          Practice 10 minutes
+        </Link>
       </section>
     </div>
   );

@@ -22,6 +22,9 @@ export function HomeStats() {
           Ten minutes. Then you know what you missed.
         </h1>
         <p className="max-w-xl text-lg leading-relaxed text-copy">
+          You already know the rule. You still miss it when you write.
+        </p>
+        <p className="max-w-xl leading-relaxed text-copy">
           Not a catalogue of quizzes. A short session, a plain rule when you are wrong, and those weak points
           come back tomorrow.
         </p>
