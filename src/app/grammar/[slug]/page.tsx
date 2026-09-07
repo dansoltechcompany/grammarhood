@@ -55,7 +55,7 @@ export default async function TopicPage({ params }: Props) {
 
       <Link
         href={`/practice?topic=${topic.id}`}
-        className="inline-flex rounded-full bg-accent px-6 py-3 text-sm font-medium text-white hover:bg-accent-dark"
+        className="inline-flex rounded-lg bg-accent px-6 py-3 text-sm font-medium text-white hover:bg-accent-dark"
       >
         Practice this · 8 questions
       </Link>
@@ -66,7 +66,7 @@ export default async function TopicPage({ params }: Props) {
           <ul className="flex flex-wrap gap-2">
             {related.map((item) => (
               <li key={item.id}>
-                <Link href={`/grammar/${item.id}`} className="rounded-full border border-line px-3 py-1 text-sm">
+                <Link href={`/grammar/${item.id}`} className="rounded-md border border-line px-3 py-1 text-sm">
                   {item.title}
                 </Link>
               </li>

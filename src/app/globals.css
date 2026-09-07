@@ -3,8 +3,9 @@
 :root {
   --paper: #f3eee4;
   --ink: #1c1712;
-  --muted: #6b5e52;
-  --line: #ddd4c6;
+  --copy: #3d342c;
+  --muted: #53483e;
+  --line: #d6ccbc;
   --card: #fffaf2;
   --accent: #b4451a;
   --accent-dark: #8f3312;
@@ -15,6 +16,7 @@
 @theme inline {
   --color-paper: var(--paper);
   --color-ink: var(--ink);
+  --color-copy: var(--copy);
   --color-muted: var(--muted);
   --color-line: var(--line);
   --color-card: var(--card);
@@ -38,4 +40,10 @@ body {
 
 ::selection {
   background: #f0c9b4;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }

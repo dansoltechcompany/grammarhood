@@ -258,17 +258,17 @@ export function RecapClient() {
               <li key={subRule}>{SUB_RULE_LABELS[subRule] ?? subRule}</li>
             ))}
           </ul>
-          <p className="mt-4 text-sm text-muted">Tomorrow’s 10 minutes will start with these, not a random list.</p>
+          <p className="mt-4 text-sm text-copy">Tomorrow’s 10 minutes will start with these, not a random list.</p>
         </section>
       ) : (
         <p className="text-good">Clean session. Mixed practice tomorrow will keep it honest.</p>
       )}
 
       <div className="flex flex-wrap gap-3">
-        <Link href="/practice" className="rounded-full bg-accent px-5 py-3 text-sm text-white">
+        <Link href="/practice" className="rounded-lg bg-accent px-5 py-3 text-sm text-white">
           Practice again
         </Link>
-        <Link href="/" className="rounded-full border border-line px-5 py-3 text-sm">
+        <Link href="/" className="rounded-lg border border-line px-5 py-3 text-sm">
           Home
         </Link>
       </div>

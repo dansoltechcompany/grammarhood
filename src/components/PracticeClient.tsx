@@ -166,7 +166,7 @@ export function PracticeClient({ questions, topic }: { questions: Question[]; to
                 autoComplete="off"
                 autoFocus
               />
-              <button type="submit" className="rounded-full bg-ink px-5 py-3 text-sm font-medium text-paper">
+              <button type="submit" className="rounded-lg bg-ink px-5 py-3 text-sm font-medium text-paper">
                 Check
               </button>
             </form>
@@ -187,7 +187,7 @@ export function PracticeClient({ questions, topic }: { questions: Question[]; to
             {last?.correct ? "Right" : "Not quite"}
           </p>
           {!last?.correct ? (
-            <p className="mt-2 text-muted">
+            <p className="mt-2 text-copy">
               You chose <span className="text-ink">{last?.given}</span>. Answer:{" "}
               <span className="text-ink">{question.answer}</span>.
             </p>
@@ -196,7 +196,7 @@ export function PracticeClient({ questions, topic }: { questions: Question[]; to
           <button
             type="button"
             onClick={next}
-            className="mt-8 rounded-full bg-accent px-6 py-3 text-sm font-medium text-white hover:bg-accent-dark"
+            className="mt-8 rounded-lg bg-accent px-6 py-3 text-sm font-medium text-white hover:bg-accent-dark"
           >
             {index + 1 >= currentQueue.length ? "See recap" : "Next"}
           </button>
