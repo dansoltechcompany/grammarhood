@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f3eee4;
+  --ink: #1c1712;
+  --muted: #6b5e52;
+  --line: #ddd4c6;
+  --card: #fffaf2;
+  --accent: #b4451a;
+  --accent-dark: #8f3312;
+  --good: #1f6b45;
+  --bad: #a33b32;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-card: var(--card);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-good: var(--good);
+  --color-bad: var(--bad);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+}
+
+html,
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: #f0c9b4;
+}
