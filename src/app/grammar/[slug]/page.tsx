@@ -6,8 +6,6 @@ import { getRelatedLive, getTopic, liveTopics } from "@/content/topics";
 
 type Props = { params: Promise<{ slug: string }> };
 
-export const dynamicParams = false;
-
 export function generateStaticParams() {
   return liveTopics().map((topic) => ({ slug: topic.id }));
 }
