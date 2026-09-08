@@ -667,7 +667,7 @@ export const TOPICS: Topic[] = [
     exampleGood: "I enjoy swimming.",
     exampleBad: "I enjoy to swim.",
     sisters: ["gerunds-after-verbs", "infinitives-after-verbs", "stop-remember-gerund-infinitive"],
-    related: ["present-simple"],
+    related: ["gerunds-after-verbs", "infinitives-after-verbs"],
   }),
   live({
     id: "zero-conditional",
@@ -916,7 +916,7 @@ export const TOPICS: Topic[] = [
     level: "B1",
     phase: 4,
     keyword: "verbs followed by gerund",
-    rule: "After enjoy, avoid, finish, mind, suggest, keep, miss, and consider, use -ing: I enjoy swimming. This page is that verb list. Choosing -ing versus to in general is the other gerunds page.",
+    rule: "After mind, suggest, keep, miss, and consider, use -ing: Would you mind waiting? This page is that verb list. Enjoy, avoid, and finish follow the same pattern — they are the examples on the gerunds-versus-to page.",
     exampleGood: "Would you mind waiting?",
     exampleBad: "Would you mind to wait?",
     sisters: ["gerunds-vs-infinitives", "infinitives-after-verbs"],

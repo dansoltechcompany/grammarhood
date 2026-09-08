@@ -27,7 +27,7 @@ function q(
 }
 
 export const PHASE4_QUESTIONS: Question[] = [
-  q("gerunds-after-verbs", 1, "B1", "gap", "I enjoy ___ in the park on Sundays.", "running", ["running", "to run", "run"], "Enjoy takes -ing.", "Enjoy + -ing: enjoy running.", "enjoy-ing"),
+  q("gerunds-after-verbs", 1, "B1", "gap", "Please keep ___ until I get back.", "waiting", ["waiting", "to wait", "wait"], "Keep takes -ing.", "Keep + -ing: keep waiting.", "keep-ing"),
   q("gerunds-after-verbs", 2, "B1", "gap", "Would you mind ___ the window?", "closing", ["to close", "closing", "close"], "Mind takes -ing.", "Mind + -ing: mind closing.", "mind-ing"),
   q("gerunds-after-verbs", 3, "B1", "fix", "She avoids to drive at night.", "She avoids driving at night.", ["She avoids to drive at night.", "She avoids driving at night.", "She avoids drive at night."], "Avoid + -ing.", "Avoids driving, not to drive.", "enjoy-ing"),
   q("gerunds-after-verbs", 4, "B1", "mcq", "Which is correct?", "They finished packing at 9.", ["They finished to pack at 9.", "They finished packing at 9.", "They finished pack at 9."], "Finish takes -ing.", "Finished packing.", "enjoy-ing"),
