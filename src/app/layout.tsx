@@ -18,7 +18,7 @@ const sans = Figtree({
 
 export const metadata: Metadata = {
   title: {
-    default: SITE_NAME,
+    default: `${SITE_NAME} · English grammar practice for adult learners`,
     template: `%s · ${SITE_NAME}`,
   },
   description:
