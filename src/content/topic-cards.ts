@@ -13,7 +13,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     examples: [
       pair("She bought an umbrella.", "She bought a umbrella."),
       pair("I have a dog.", "I have an dog."),
-      pair("Can you close the window?", "Can you close a window? (if you both mean this one)"),
+      pair("Can you close the window?", "Can you close window?"),
       pair("I saw a film. The film was long.", "I saw a film. A film was long."),
     ],
   },
@@ -29,8 +29,8 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     watchFor: "Habits and facts stay in present simple, even if you say them now.",
     examples: [
       pair("She usually drinks coffee.", "She usually is drinking coffee."),
-      pair("Right now she is drinking tea.", "Right now she drinks tea. (if you mean this moment)"),
-      pair("Water boils at 100°C.", "Water is boiling at 100°C. (as a fact)"),
+      pair("Right now she is drinking tea.", "Right now she drinking tea."),
+      pair("Water boils at 100°C.", "Water boiling at 100°C."),
     ],
   },
   "past-simple": {
@@ -54,7 +54,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     examples: [
       pair("The keys are on the table.", "The keys are in the table."),
       pair("She is in the kitchen.", "She is on the kitchen."),
-      pair("I'll meet you at the station.", "I'll meet you in the station. (if you mean the meeting point)"),
+      pair("I'll meet you at the station.", "I'll meet you on the station."),
     ],
   },
   "prepositions-of-time": {
@@ -85,7 +85,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     watchFor: "A finished date (in 2019, yesterday) needs past simple, not present perfect.",
     examples: [
       pair("I visited Paris in 2019.", "I have visited Paris in 2019."),
-      pair("I have visited Paris three times.", "I visited Paris three times. (if you mean life experience up to now)"),
+      pair("I have visited Paris three times.", "I have visited Paris yesterday."),
       pair("She lost her keys yesterday.", "She has lost her keys yesterday."),
     ],
   },
@@ -108,8 +108,8 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
   "past-continuous": {
     watchFor: "Use was/were + -ing for a background action, not for a short finished event.",
     examples: [
-      pair("At 7 I was cooking.", "At 7 I cooked dinner still."),
-      pair("They were waiting when I arrived.", "They waited when I arrived. (if you mean the wait was already in progress)"),
+      pair("At 7 I was cooking.", "At 7 I cooking."),
+      pair("They were waiting when I arrived.", "They waiting when I arrived."),
       pair("I wasn't sleeping at midnight.", "I didn't sleeping at midnight."),
     ],
   },
@@ -117,7 +117,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     watchFor: "The long background is past continuous; the interruption is past simple.",
     examples: [
       pair("I was cooking when the phone rang.", "I cooked when the phone was ringing."),
-      pair("She was leaving as the email arrived.", "She left as the email was arriving. (if the leaving was already in progress)"),
+      pair("She was leaving as the email arrived.", "She leaving as the email arrived."),
       pair("We were talking when the lights went out.", "We talked when the lights were going out."),
     ],
   },
@@ -133,8 +133,8 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     watchFor: "Evidence you can see now (those clouds) usually takes going to, not a random will.",
     examples: [
       pair("Look at those clouds — it is going to rain.", "Look at those clouds — it will raining."),
-      pair("I'm thirsty. I will get some water.", "I'm thirsty. I am going to get some water. (if you decided this second)"),
-      pair("We are going to move in June. It's booked.", "We will move in June. It's booked. (if the plan is already fixed)"),
+      pair("I'm thirsty. I will get some water.", "I'm thirsty. I will getting some water."),
+      pair("We are going to move in June. It's booked.", "We going to move in June. It's booked."),
     ],
   },
   "going-to": {
@@ -148,16 +148,16 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
   "zero-article": {
     watchFor: "No the with things in general: I like music, not the music (unless you mean a specific track).",
     examples: [
-      pair("I like music.", "I like the music. (if you mean music in general)"),
-      pair("Dogs need water.", "The dogs need water. (if you mean all dogs)"),
-      pair("She works in finance.", "She works in the finance. (as a field)"),
+      pair("I like music.", "I like musics."),
+      pair("Dogs need water.", "Dogs need a water."),
+      pair("She works in finance.", "She works in a finance."),
     ],
   },
   "some-any": {
     watchFor: "Any in questions and negatives; some in ordinary positives.",
     examples: [
       pair("I don't have any sugar.", "I don't have some sugar."),
-      pair("Do you have any questions?", "Do you have some questions? (as a normal offer, some can be OK — not in a negative)"),
+      pair("There isn't any milk left.", "There isn't some milk left."),
       pair("I have some time this afternoon.", "I have any time this afternoon."),
     ],
   },
@@ -189,7 +189,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     watchFor: "People take 's: Tom's phone. A plural that already ends in s takes only ': the students' room.",
     examples: [
       pair("Tom's phone is on the desk.", "Toms phone is on the desk."),
-      pair("The students' room is locked.", "The student's room is locked. (if you mean more than one student)"),
+      pair("The students' room is locked.", "The students room is locked."),
       pair("My manager's email is below.", "My managers email is below."),
     ],
   },
@@ -220,9 +220,9 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
   "must-have-to": {
     watchFor: "Don't have to = optional. Mustn't = not allowed. They are not the same.",
     examples: [
-      pair("You don't have to come if you are busy.", "You mustn't come if you are busy. (if you only mean it is optional)"),
+      pair("It's optional — you don't have to come.", "It's optional — you mustn't come."),
       pair("You have to wear a badge here.", "You have wear a badge here."),
-      pair("You mustn't share that password.", "You don't have to share that password. (if you mean it is forbidden)"),
+      pair("It's not allowed — you mustn't share that password.", "It's not allowed — you don't have to share that password."),
     ],
   },
   "should": {
@@ -237,7 +237,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     watchFor: "In questions and negatives: did you use to, not did you used to.",
     examples: [
       pair("Did you use to live here?", "Did you used to live here?"),
-      pair("I used to smoke.", "I use to smoke. (for a past habit)"),
+      pair("I used to smoke.", "I use to smoke."),
       pair("She didn't use to work weekends.", "She didn't used to work weekends."),
     ],
   },
@@ -291,7 +291,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     examples: [
       pair("She sings well.", "She sings good."),
       pair("That's a good point.", "That's a well point."),
-      pair("I don't feel well.", "I don't feel good. (if you mean health)"),
+      pair("The report looks good.", "The report looks well."),
     ],
   },
   "every-vs-each": {
@@ -307,14 +307,14 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     examples: [
       pair("Would you like another cup?", "Would you like other cup?"),
       pair("Other people have already left.", "Others people have already left."),
-      pair("I'll take this one. You can have the others.", "I'll take this one. You can have the other. (if more than one remain)"),
+      pair("I'll take this one. You can have the others.", "I'll take this one. You can have the others ones."),
     ],
   },
   "been-vs-gone": {
     watchFor: "Has gone = still there. Has been = went and came back.",
     examples: [
-      pair("She has gone to the bank. She isn't here.", "She has been to the bank. She isn't here. (if she is still at the bank)"),
-      pair("I have been to Lisbon twice.", "I have gone to Lisbon twice. (for a trip you came back from)"),
+      pair("She has gone to the bank. She isn't here.", "She has been to the bank. She isn't here."),
+      pair("I have been to Lisbon twice. I'm back now.", "I have gone to Lisbon twice. I'm back now."),
     ],
   },
   "ed-vs-ing-adjectives": {
@@ -328,7 +328,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
   "already-yet-still": {
     watchFor: "Yet in questions and negatives. Already in positives. Still = it continues.",
     examples: [
-      pair("Has the parcel arrived yet?", "Has the parcel arrived already? (if you only mean 'up to now')"),
+      pair("Has the parcel arrived yet?", "Has the parcel arrived still?"),
       pair("She has already left.", "She has left yet."),
       pair("He still hasn't called.", "He yet hasn't called."),
     ],
@@ -338,22 +338,22 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     examples: [
       pair("She taught herself Spanish.", "She taught herself me Spanish."),
       pair("I booked the ticket myself.", "I booked the ticket me."),
-      pair("He made himself a coffee.", "He made him a coffee. (if he made it for himself)"),
+      pair("He made himself a coffee.", "He made he a coffee."),
     ],
   },
   "relative-pronouns": {
-    watchFor: "Who for people in a relative clause. Which for things, not people.",
+    watchFor: "You need who/which/that to attach the extra clause. Do not leave a gap, and do not keep a second object (I sent it).",
     examples: [
-      pair("The woman who called is my manager.", "The woman which called is my manager."),
-      pair("The file that I sent is in your inbox.", "The file who I sent is in your inbox."),
-      pair("This is the café which opened last week.", "This is the café who opened last week."),
+      pair("The woman who called is my manager.", "The woman called is my manager."),
+      pair("The file that I sent is in your inbox.", "The file I sent it is in your inbox."),
+      pair("This is the café which opened last week.", "This is the café opened last week."),
     ],
   },
   "prepositions-of-movement": {
     watchFor: "Into / onto for entering a space or surface. In / on is where something already is.",
     examples: [
-      pair("She walked into the room.", "She walked in the room. (if you mean she entered)"),
-      pair("Put the bag onto the seat.", "Put the bag into the seat. (if you mean the surface)"),
+      pair("She walked into the room.", "She walked into room."),
+      pair("Put the bag onto the seat.", "Put the bag onto seat."),
       pair("He got off the bus at my stop.", "He got out the bus at my stop."),
     ],
   },
@@ -433,7 +433,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     watchFor: "Am/is/are + past participle: are made, not are make.",
     examples: [
       pair("The parts are made in Osaka.", "The parts are make in Osaka."),
-      pair("This room is cleaned every night.", "This room is clean every night. (as a passive)"),
+      pair("This room is cleaned every night.", "This room cleaned every night."),
       pair("The invoices are sent on Fridays.", "The invoices are send on Fridays."),
     ],
   },
@@ -465,7 +465,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     watchFor: "Had + past participle for the earlier past event. Has is present perfect.",
     examples: [
       pair("The film had started when we arrived.", "The film has started when we arrived."),
-      pair("I had already eaten, so I skipped lunch.", "I have already eaten, so I skipped lunch. (two past times)"),
+      pair("I had already eaten, so I skipped lunch.", "I had already eat, so I skipped lunch."),
       pair("She hadn't seen the email before the call.", "She hasn't seen the email before the call."),
     ],
   },
@@ -481,8 +481,8 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     watchFor: "Tense usually moves back: “I work here” → she said she worked there.",
     examples: [
       pair("She said she worked there.", "She said she work there."),
-      pair("He told me he was exhausted.", "He told me he is exhausted. (if you report it later)"),
-      pair("They said they would send it on Friday.", "They said they will send it on Friday. (reported later)"),
+      pair("He told me he was exhausted.", "He told me he exhausted."),
+      pair("They said they would send it on Friday.", "They said they sending it on Friday."),
     ],
   },
   "third-conditional": {
@@ -496,8 +496,8 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
   "mixed-conditionals": {
     watchFor: "Unreal past condition, present result: if I had studied medicine, I would be a doctor now.",
     examples: [
-      pair("If I had studied medicine, I would be a doctor now.", "If I had studied medicine, I would have been a doctor now. (if you mean the job now)"),
-      pair("If we had left on time, we wouldn't be stuck here.", "If we had left on time, we wouldn't have been stuck here. (if you mean now)"),
+      pair("If I had studied medicine, I would be a doctor now.", "If I had studied medicine, I would have been a doctor now."),
+      pair("If we had left on time, we wouldn't be stuck here.", "If we had left on time, we wouldn't have been stuck here."),
     ],
   },
   "was-were": {
@@ -519,9 +519,9 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
   "question-tags": {
     watchFor: "Positive statement → negative tag. You're late, aren't you?",
     examples: [
-      pair("You're late, aren't you?", "You're late, are you? (as a normal checking tag)"),
+      pair("You're late, aren't you?", "You're late, isn't you?"),
       pair("She doesn't drive, does she?", "She doesn't drive, doesn't she?"),
-      pair("They've left, haven't they?", "They've left, have they? (as a normal checking tag)"),
+      pair("They've left, haven't they?", "They've left, hasn't they?"),
     ],
   },
   "indirect-questions": {
@@ -535,16 +535,16 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
   "used-to-vs-would": {
     watchFor: "Would does not work for past states (ownership, feelings). Use used to.",
     examples: [
-      pair("I used to have a motorbike.", "I would have a motorbike when I was 20. (for ownership)"),
+      pair("I used to have a motorbike.", "I would have a motorbike when I was 20."),
       pair("Every Sunday we would walk by the river.", "Every Sunday we used walk by the river."),
-      pair("She used to be shy.", "She would be shy. (as a past state)"),
+      pair("She used to be shy.", "She used being shy."),
     ],
   },
   "used-to-vs-be-used-to": {
     watchFor: "Be used to + noun/-ing = accustomed now. Used to + verb = a past habit that stopped.",
     examples: [
-      pair("I am used to working nights.", "I used to working nights. (if you mean accustomed now)"),
-      pair("I used to work nights. I don't any more.", "I am used to work nights. (if you mean a past habit)"),
+      pair("I am used to working nights.", "I used to working nights."),
+      pair("I used to work nights. I don't any more.", "I am used to work nights."),
       pair("She is used to the noise.", "She used to the noise."),
     ],
   },
@@ -585,7 +585,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     examples: [
       pair("I stayed in because it was raining.", "I stayed in despite it was raining."),
       pair("Although I was tired, I finished the report.", "Although I was tired, but I finished the report."),
-      pair("The train was late. However, we still made the meeting.", "The train was late, however we still made the meeting. (as one comma splice)"),
+      pair("The train was late. However, we still made the meeting.", "The train was late, however we still made the meeting."),
     ],
   },
   "despite-in-spite-of": {
@@ -616,14 +616,14 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     watchFor: "Wish + past for now. Wish + past perfect for a past you cannot change. Not I wish I would have more time now.",
     examples: [
       pair("I wish I had more time.", "I wish I would have more time now."),
-      pair("I wish I had left earlier.", "I wish I left earlier. (for a past regret)"),
-      pair("If only the train were on time.", "If only the train would be on time. (for a present wish)"),
+      pair("I wish I had left earlier.", "I wish I left earlier."),
+      pair("If only the train were on time.", "If only the train is on time."),
     ],
   },
   "causative": {
     watchFor: "Have/get + object + past participle: I had my car serviced (someone else did it).",
     examples: [
-      pair("I had my car serviced.", "I had serviced my car. (if you mean a garage did it)"),
+      pair("I had my car serviced.", "I had my car service."),
       pair("She got her hair cut.", "She got cut her hair."),
       pair("We need to have the lock changed.", "We need to have changed the lock."),
     ],
@@ -647,23 +647,23 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
   "by-vs-until": {
     watchFor: "By = deadline (not later than). Until = how long something continues.",
     examples: [
-      pair("Please send it by Friday.", "Please send it until Friday. (if you mean a deadline)"),
-      pair("The shop is open until 8.", "The shop is open by 8. (if you mean it continues to 8)"),
-      pair("I'll be back by 6.", "I'll be back until 6. (if you mean a deadline to return)"),
+      pair("Please send it by Friday at the latest.", "Please send it until Friday at the latest."),
+      pair("The shop is open until 8.", "The shop is open until at 8."),
+      pair("I'll be back by 6.", "I'll be back until 6."),
     ],
   },
   "in-time-vs-on-time": {
     watchFor: "On time = at the scheduled moment. In time = early enough to do something.",
     examples: [
-      pair("We arrived in time to board.", "We arrived on time to board. (if you only mean ‘with minutes to spare’)"),
-      pair("The train left on time.", "The train left in time. (if you mean it left as scheduled)"),
-      pair("I got there in time to print the slides.", "I got there on time to print the slides. (if you mean just enough time)"),
+      pair("We arrived in time to board.", "We arrived in the time to board."),
+      pair("The train left on time.", "The train left on the time."),
+      pair("I got there in time to print the slides.", "I got there in time for print the slides."),
     ],
   },
   "at-the-end-vs-in-the-end": {
     watchFor: "At the end of + a noun. In the end = finally.",
     examples: [
-      pair("In the end we took a taxi.", "At the end we took a taxi. (if you mean ‘finally’)"),
+      pair("In the end we took a taxi.", "At the end we took a taxi."),
       pair("I'll meet you at the end of the street.", "I'll meet you in the end of the street."),
       pair("At the end of the film, nobody spoke.", "In the end of the film, nobody spoke."),
     ],
@@ -673,7 +673,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     examples: [
       pair("Please don't call during the meeting.", "Please don't call during we were meeting."),
       pair("She took notes while he was speaking.", "She took notes during he was speaking."),
-      pair("I fell asleep during the film.", "I fell asleep while the film. (if there is no verb)"),
+      pair("I fell asleep during the film.", "I fell asleep while the film."),
     ],
   },
   "who-vs-whom": {
@@ -681,22 +681,22 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     examples: [
       pair("Whom did you call?", "Whom called you?"),
       pair("Who sent the file?", "Whom sent the file?"),
-      pair("To whom should I address this?", "To who should I address this? (in careful writing)"),
+      pair("The person whom we hired starts Monday.", "The person whom hired us starts Monday."),
     ],
   },
   "like-vs-as": {
     watchFor: "Like + noun (similar to). As + role or clause: she works as a nurse.",
     examples: [
-      pair("She works as a nurse.", "She works like a nurse. (if you mean her job)"),
-      pair("She sings like her mother.", "She sings as her mother. (if you mean similar to)"),
-      pair("As I said, the deadline is Friday.", "Like I said, the deadline is Friday. (in careful writing)"),
+      pair("She works as a nurse.", "She works as nurse."),
+      pair("She sings like her mother.", "She sings as her mother."),
+      pair("Treat this as confidential.", "Treat this like confidential."),
     ],
   },
   "bring-vs-take": {
     watchFor: "Bring = towards here / the speaker. Take = away from here.",
     examples: [
-      pair("Please bring the files to my desk.", "Please take the files to my desk. (if I am at that desk now)"),
-      pair("Take an umbrella with you.", "Bring an umbrella with you. (if you are leaving this place)"),
+      pair("Please bring the files here.", "Please take the files here."),
+      pair("Take an umbrella with you when you leave.", "Bring an umbrella with you when you leave."),
       pair("Can you bring that charger here?", "Can you take that charger here?"),
     ],
   },
@@ -713,7 +713,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     examples: [
       pair("We watched a film last night.", "We looked a film last night."),
       pair("Look at this invoice.", "See at this invoice."),
-      pair("Did you see her in the corridor?", "Did you watch her in the corridor? (if you only noticed her)"),
+      pair("Did you see her in the corridor?", "Did you see at her in the corridor?"),
     ],
   },
   "hear-vs-listen": {
@@ -729,7 +729,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     examples: [
       pair("She gave up sugar last year.", "She gave up to sugar last year."),
       pair("I'll pick you up at 7.", "I'll pick you at 7."),
-      pair("Please turn off the lights.", "Please turn the lights. (if you mean off)"),
+      pair("Please turn off the lights.", "Please turn the lights."),
     ],
   },
   "so-that-in-order-to": {
@@ -751,9 +751,9 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
   "stop-remember-gerund-infinitive": {
     watchFor: "Remember to lock = don't forget later. Remember locking = a memory of the past.",
     examples: [
-      pair("Remember to lock the door.", "Remember locking the door. (if you mean ‘don't forget later’)"),
+      pair("Remember to lock the door.", "Remember to locking the door."),
       pair("He stopped smoking last year.", "He stopped to smoking last year."),
-      pair("She stopped to check the map.", "She stopped checking the map. (if she paused the walk in order to check)"),
+      pair("She stopped to check the map.", "She stopped to checking the map."),
     ],
   },
   "who-which-that": {
@@ -769,15 +769,15 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     examples: [
       pair("If I won the lottery, I would travel.", "If I win the lottery, I would travel."),
       pair("If it rains tomorrow, we will stay in.", "If it rains tomorrow, we would stay in."),
-      pair("If I were you, I would wait.", "If I am you, I will wait. (for this advice)"),
+      pair("If I were you, I would wait.", "If I am you, I will wait."),
     ],
   },
   "present-perfect-vs-present-perfect-continuous": {
     watchFor: "Have written three emails = a result you can count. Have been writing = the activity over time.",
     examples: [
-      pair("I have been writing all morning.", "I have written all morning. (if you mean the activity, not a finished count)"),
-      pair("I have written three emails.", "I have been writing three emails. (if you mean a finished count)"),
-      pair("She has been waiting since 9.", "She has waited since 9. (if you want to stress the ongoing wait)"),
+      pair("I have been writing all morning.", "I have writing all morning."),
+      pair("I have written three emails.", "I have been written three emails."),
+      pair("She has been waiting since 9.", "She has been wait since 9."),
     ],
   },
   "reported-questions": {
@@ -792,8 +792,8 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     watchFor: "Lay needs an object (lay the keys). Lie has no object (lie on the sofa). Past of lie is lay.",
     examples: [
       pair("Lay the keys on the desk.", "Lie the keys on the desk."),
-      pair("I'm going to lie down for ten minutes.", "I'm going to lay down for ten minutes. (no object)"),
-      pair("Yesterday I lay on the sofa.", "Yesterday I laid on the sofa. (if you mean recline)"),
+      pair("I'm going to lie down for ten minutes.", "I'm going to lay down for ten minutes."),
+      pair("Yesterday I lay on the sofa.", "Yesterday I laid on the sofa."),
     ],
   },
   "future-perfect": {

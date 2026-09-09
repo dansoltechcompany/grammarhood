@@ -29,12 +29,12 @@ function q(
 export const PHASE4_QUESTIONS: Question[] = [
   q("gerunds-after-verbs", 1, "B1", "gap", "Please keep ___ until I get back.", "waiting", ["waiting", "to wait", "wait"], "Keep takes -ing.", "Keep + -ing: keep waiting.", "keep-ing"),
   q("gerunds-after-verbs", 2, "B1", "gap", "Would you mind ___ the window?", "closing", ["to close", "closing", "close"], "Mind takes -ing.", "Mind + -ing: mind closing.", "mind-ing"),
-  q("gerunds-after-verbs", 3, "B1", "fix", "She avoids to drive at night.", "She avoids driving at night.", ["She avoids to drive at night.", "She avoids driving at night.", "She avoids drive at night."], "Avoid + -ing.", "Avoids driving, not to drive.", "enjoy-ing"),
-  q("gerunds-after-verbs", 4, "B1", "mcq", "Which is correct?", "They finished packing at 9.", ["They finished to pack at 9.", "They finished packing at 9.", "They finished pack at 9."], "Finish takes -ing.", "Finished packing.", "enjoy-ing"),
+  q("gerunds-after-verbs", 3, "B1", "fix", "She keeps to interrupt in meetings.", "She keeps interrupting in meetings.", ["She keeps to interrupt in meetings.", "She keeps interrupting in meetings.", "She keeps interrupt in meetings."], "Keep takes -ing.", "Keeps interrupting, not to interrupt.", "keep-ing"),
+  q("gerunds-after-verbs", 4, "B1", "mcq", "Which is correct?", "They considered packing at 9.", ["They considered to pack at 9.", "They considered packing at 9.", "They considered pack at 9."], "Consider takes -ing.", "Considered packing.", "mind-ing"),
   q("gerunds-after-verbs", 5, "B1", "gap", "He suggested ___ a taxi.", "taking", ["to take", "taking", "take"], "Suggest takes -ing.", "Suggested taking.", "mind-ing"),
-  q("gerunds-after-verbs", 6, "B1", "mcq", "Choose the verb that takes -ing here.", "keep", ["want", "decide", "keep"], "Keep going, not keep to go.", "Keep + -ing.", "enjoy-ing"),
+  q("gerunds-after-verbs", 6, "B1", "mcq", "Choose the verb that takes -ing here.", "keep", ["want", "decide", "keep"], "Keep going, not keep to go.", "Keep + -ing.", "keep-ing"),
   q("gerunds-after-verbs", 7, "B1", "fix", "I miss to see my colleagues.", "I miss seeing my colleagues.", ["I miss to see my colleagues.", "I miss seeing my colleagues.", "I miss see my colleagues."], "Miss + -ing.", "Miss seeing.", "mind-ing"),
-  q("gerunds-after-verbs", 8, "B1", "gap", "We're considering ___ flats.", "changing", ["to change", "changing", "change"], "Consider takes -ing.", "Considering changing.", "enjoy-ing"),
+  q("gerunds-after-verbs", 8, "B1", "gap", "We're considering ___ flats.", "changing", ["to change", "changing", "change"], "Consider takes -ing.", "Considering changing.", "mind-ing"),
 
   q("infinitives-after-verbs", 1, "B1", "gap", "She decided ___ late.", "to stay", ["staying", "to stay", "stay"], "Decide takes to.", "Decided to stay.", "decide-to"),
   q("infinitives-after-verbs", 2, "B1", "gap", "I want ___ earlier tomorrow.", "to leave", ["leaving", "to leave", "leave"], "Want takes to.", "Want to leave.", "want-to"),
