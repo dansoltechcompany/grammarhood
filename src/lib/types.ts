@@ -3,6 +3,11 @@ export type Phase = 1 | 2 | 3 | 4;
 export type TopicStatus = "live" | "draft";
 export type QuestionType = "mcq" | "gap" | "fix";
 
+export type RuleExample = {
+  yes: string;
+  no: string;
+};
+
 export type Topic = {
   id: string;
   title: string;
@@ -15,6 +20,8 @@ export type Topic = {
   rule: string;
   exampleGood: string;
   exampleBad: string;
+  examples: RuleExample[];
+  watchFor: string;
   sisters: string[];
   related: string[];
 };

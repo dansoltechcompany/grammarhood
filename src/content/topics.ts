@@ -1,4 +1,5 @@
 import type { Topic } from "../lib/types";
+import { TOPIC_CARDS } from "./topic-cards";
 
 export const PHRASAL_VERBS_SET = [
   "get up",
@@ -23,13 +24,15 @@ export const PHRASAL_VERBS_SET = [
   "grow up",
 ] as const;
 
+type TopicRecord = Omit<Topic, "examples" | "watchFor">;
+
 const draft = (
-  partial: Omit<Topic, "status" | "ruleReviewed" | "rule" | "exampleGood" | "exampleBad"> & {
+  partial: Omit<TopicRecord, "status" | "ruleReviewed" | "rule" | "exampleGood" | "exampleBad"> & {
     rule?: string;
     exampleGood?: string;
     exampleBad?: string;
   },
-): Topic => ({
+): TopicRecord => ({
   status: "draft",
   ruleReviewed: false,
   rule: partial.rule ?? "",
@@ -38,15 +41,13 @@ const draft = (
   ...partial,
 });
 
-const live = (
-  topic: Omit<Topic, "status" | "ruleReviewed">,
-): Topic => ({
+const live = (topic: Omit<TopicRecord, "status" | "ruleReviewed">): TopicRecord => ({
   ...topic,
   status: "live",
   ruleReviewed: true,
 });
 
-export const TOPICS: Topic[] = [
+export const TOPIC_RECORDS: TopicRecord[] = [
   {
     id: "a-an-the",
     title: "A, an, the",
@@ -1271,6 +1272,21 @@ export const TOPICS: Topic[] = [
     related: ["future-simple"],
   }),
 ];
+
+export const TOPICS: Topic[] = TOPIC_RECORDS.map((topic) => {
+  const card = TOPIC_CARDS[topic.id];
+  if (!card) {
+    throw new Error(`Missing topic card for ${topic.id}`);
+  }
+  const first = card.examples[0];
+  return {
+    ...topic,
+    examples: card.examples,
+    watchFor: card.watchFor,
+    exampleGood: first?.yes ?? topic.exampleGood,
+    exampleBad: first?.no ?? topic.exampleBad,
+  };
+});
 
 export function getTopic(id: string): Topic | undefined {
   return TOPICS.find((topic) => topic.id === id);

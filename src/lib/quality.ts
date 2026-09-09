@@ -83,6 +83,24 @@ export function checkTopics(): Issue[] {
         message: `${topic.id} is live but missing rule or examples.`,
       });
     }
+    if (topic.examples.length < 2 || topic.examples.length > 4) {
+      issues.push({
+        level: "error",
+        message: `${topic.id} needs 2–4 example pairs (found ${topic.examples.length}).`,
+      });
+    }
+    if (topic.examples.some((example) => !example.yes.trim() || !example.no.trim())) {
+      issues.push({
+        level: "error",
+        message: `${topic.id} has an empty Yes/No example.`,
+      });
+    }
+    if (!topic.watchFor.trim()) {
+      issues.push({
+        level: "error",
+        message: `${topic.id} is live but missing a watch-for line.`,
+      });
+    }
 
     const bank = QUESTIONS.filter((question) => question.topicId === topic.id);
     if (bank.length < 8) {

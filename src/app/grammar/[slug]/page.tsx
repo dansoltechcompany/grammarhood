@@ -43,11 +43,20 @@ export default async function TopicPage({ params }: Props) {
       <section className="rounded-2xl border border-line bg-card p-5 sm:p-7">
         <h2 className="text-sm uppercase tracking-[0.16em] text-muted">The rule</h2>
         <p className="mt-3 text-lg leading-relaxed">{topic.rule}</p>
-        <p className="mt-4 text-sm">
-          <span className="text-good">Yes:</span> {topic.exampleGood}
-        </p>
-        <p className="mt-1 text-sm">
-          <span className="text-bad">No:</span> {topic.exampleBad}
+        <ul className="mt-5 space-y-4">
+          {topic.examples.map((example) => (
+            <li key={`${example.yes}-${example.no}`}>
+              <p className="text-sm">
+                <span className="text-good">Yes:</span> {example.yes}
+              </p>
+              <p className="mt-1 text-sm">
+                <span className="text-bad">No:</span> {example.no}
+              </p>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-5 border-t border-line pt-4 text-sm leading-relaxed text-copy">
+          <span className="font-medium text-ink">Watch for:</span> {topic.watchFor}
         </p>
       </section>
 
