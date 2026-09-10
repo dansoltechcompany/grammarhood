@@ -5,7 +5,7 @@ import type { Level } from "@/lib/types";
 
 export const metadata: Metadata = {
   title: "Grammar topics",
-  description: "A1–B1 English grammar topics. One short rule per page, then eight questions.",
+  description: "English grammar topics. One short rule per page, then eight questions.",
   robots: { index: true, follow: true },
 };
 

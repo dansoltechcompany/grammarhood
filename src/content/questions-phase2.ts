@@ -91,9 +91,9 @@ export const PHASE2_QUESTIONS: Question[] = [
   q("going-to", 8, "A1", "mcq", "Choose the correct sentence.", "It is going to be busy.", ["It going to be busy.", "It is going to be busy.", "It is going be busy."], "It + is + going to + be.", "Is going to be.", "be-going-to"),
 
   q("zero-article", 1, "A2", "mcq", "Which sentence means coffee in general?", "I don't drink coffee.", ["I don't drink the coffee.", "I don't drink coffee.", "I don't drink coffees."], "No article for the drink as a type.", "Uncountable + general: coffee, not the coffee.", "general-no-article"),
-  q("zero-article", 2, "A2", "gap", "___ need sleep. (dogs in general)", "Dogs", ["The dogs", "Dogs", "A dogs"], "Plural + general = no article.", "Dogs need sleep. The dogs would be specific dogs.", "general-no-article"),
-  q("zero-article", 3, "A2", "fix", "She loves the music. (music in general)", "She loves music.", ["She loves the music.", "She loves music.", "She loves a music."], "Music in general takes no article.", "I like music / she loves music.", "general-no-article"),
-  q("zero-article", 4, "A2", "mcq", "Which is correct for school as an institution?", "They go to school at 8.", ["They go to school at 8.", "They go school at 8.", "They go to a school at 8 every morning as the institution phrase."], "Go to school = the activity.", "No article: go to school.", "institution"),
+  q("zero-article", 2, "A2", "gap", "___ need sleep.", "Dogs", ["The dogs", "Dogs", "A dogs"], "Plural + general = no article.", "Dogs need sleep. The dogs would be specific dogs.", "general-no-article"),
+  q("zero-article", 3, "A2", "fix", "She loves the music.", "She loves music.", ["She loves the music.", "She loves music.", "She loves a music."], "Music in general takes no article.", "I like music / she loves music.", "general-no-article"),
+  q("zero-article", 4, "A2", "mcq", "Which is correct for school as an institution?", "They go to school at 8.", ["They go to school at 8.", "They go school at 8.", "They go to a school at 8."], "Go to school = the activity.", "No article: go to school.", "institution"),
   q("zero-article", 5, "A2", "gap", "I need ___ information, not a brochure.", "information", ["an information", "information", "the informations"], "Information is uncountable and general here.", "Information, not an information.", "general-no-article"),
   q("zero-article", 6, "A2", "fix", "The life is short.", "Life is short.", ["The life is short.", "Life is short.", "A life is short."], "Abstract nouns in general.", "Life is short — no the.", "general-no-article"),
   q("zero-article", 7, "A2", "mcq", "Choose the sentence about specific files you both can see.", "Please send the files.", ["Please send files.", "Please send the files.", "Please send a files."], "You both know which files.", "The files = specific. Bare files would be general.", "the-for-specific"),
@@ -106,7 +106,7 @@ export const PHASE2_QUESTIONS: Question[] = [
   q("some-any", 5, "A1", "gap", "Would you like ___ tea?", "some", ["some", "any", "the"], "Offers often use some.", "Offers/requests can use some: Would you like some tea?", "some-offer"),
   q("some-any", 6, "A1", "gap", "I don't know ___ of these people.", "any", ["some", "any", "a"], "Negative idea.", "Don't know any of them.", "any-negative-question"),
   q("some-any", 7, "A1", "mcq", "Choose the correct sentence.", "She has some news.", ["She has any news.", "She has some news.", "She has a news."], "Positive + uncountable.", "Some news (uncountable). Not a news.", "some-positive"),
-  q("some-any", 8, "A1", "fix", "Have you got some stamps? I need one. (neutral question)", "Have you got any stamps?", ["Have you got some stamps?", "Have you got any stamps?", "Have you got a stamps?"], "A normal question prefers any.", "Have you got any…? Some is more like expecting yes.", "any-negative-question"),
+  q("some-any", 8, "A1", "fix", "Have you got some stamps? I need one.", "Have you got any stamps?", ["Have you got some stamps?", "Have you got any stamps?", "Have you got a stamps?"], "A normal question prefers any.", "Have you got any…? Some is more like expecting yes.", "any-negative-question"),
 
   q("much-many-a-lot-of", 1, "A1", "gap", "How ___ emails did you get?", "many", ["much", "many", "a lot"], "Emails are countable.", "How many + plural count noun.", "many-count"),
   q("much-many-a-lot-of", 2, "A1", "gap", "How ___ time do we have?", "much", ["much", "many", "a lot"], "Time is uncountable here.", "How much + uncountable.", "much-uncount"),
@@ -122,7 +122,7 @@ export const PHASE2_QUESTIONS: Question[] = [
   q("this-that-these-those", 3, "A1", "fix", "This shoes are wet.", "These shoes are wet.", ["This shoes are wet.", "These shoes are wet.", "That shoes are wet."], "Shoes is plural.", "These shoes, not this shoes.", "near-plural"),
   q("this-that-these-those", 4, "A1", "mcq", "Pointing to a far building:", "That building is the office.", ["This building is the office.", "That building is the office.", "These building is the office."], "Far + one.", "That building.", "far-singular"),
   q("this-that-these-those", 5, "A1", "gap", "Can you pass me ___ papers next to you?", "those", ["these", "those", "this"], "Next to the other person = farther from you.", "Those papers (not in your hands).", "far-plural"),
-  q("this-that-these-those", 6, "A1", "gap", "___ is my colleague, Ana. (introducing someone next to you)", "This", ["This", "These", "Those"], "One person, near.", "This is Ana.", "near-singular"),
+  q("this-that-these-those", 6, "A1", "gap", "___ is my colleague, Ana.", "This", ["This", "These", "Those"], "One person, near.", "This is Ana.", "near-singular"),
   q("this-that-these-those", 7, "A1", "mcq", "Choose the correct pair.", "These apples are sweet.", ["This apples are sweet.", "These apples are sweet.", "Those apple are sweet."], "Plural + near.", "These apples.", "near-plural"),
   q("this-that-these-those", 8, "A1", "fix", "I like that photos.", "I like those photos.", ["I like that photos.", "I like those photos.", "I like this photos."], "Photos is plural.", "Those photos, not that photos.", "far-plural"),
 
@@ -137,7 +137,7 @@ export const PHASE2_QUESTIONS: Question[] = [
 
   q("possessive-s", 1, "A1", "gap", "This is ___ laptop. (Ana)", "Ana's", ["Ana", "Ana's", "Anas"], "One person + 's.", "Ana's laptop.", "apostrophe-s"),
   q("possessive-s", 2, "A1", "mcq", "The room of the students (plural already with s):", "the students' room", ["the student's room", "the students' room", "the students room"], "Plural ending in s: apostrophe after s.", "students' = of the students.", "plural-apostrophe"),
-  q("possessive-s", 3, "A1", "fix", "My parents car is old. (two parents)", "My parents' car is old.", ["My parents car is old.", "My parents' car is old.", "My parent's car is old."], "Parents is plural with s.", "Parents' car.", "plural-apostrophe"),
+  q("possessive-s", 3, "A1", "fix", "My parents car is old.", "My parents' car is old.", ["My parents car is old.", "My parents' car is old.", "My parent's car is old."], "Parents is plural with s.", "Parents' car.", "plural-apostrophe"),
   q("possessive-s", 4, "A1", "gap", "The ___ name is Max. (dog)", "dog's", ["dog", "dog's", "dogs"], "One animal.", "The dog's name.", "apostrophe-s"),
   q("possessive-s", 5, "A1", "mcq", "Which is correct?", "James's office is upstairs.", ["James office is upstairs.", "James's office is upstairs.", "Jame's office is upstairs."], "Names ending in s still often take 's.", "James's office.", "apostrophe-s"),
   q("possessive-s", 6, "A1", "fix", "The childrens toys are everywhere.", "The children's toys are everywhere.", ["The childrens toys are everywhere.", "The children's toys are everywhere.", "The childrens' toys are everywhere."], "Children is irregular plural.", "Children's — add 's, not only '.", "irregular-plural"),
@@ -281,7 +281,7 @@ export const PHASE2_QUESTIONS: Question[] = [
 
   q("been-vs-gone", 1, "A2", "mcq", "She isn't in the office. She ___ to the bank.", "has gone", ["has been", "has gone", "have gone"], "She is still there.", "Has gone = not back yet.", "gone-still-there"),
   q("been-vs-gone", 2, "A2", "gap", "I ___ to Lisbon twice. I'm home now.", "have been", ["have gone", "have been", "has been"], "Experience; you returned.", "Have been = went and came back.", "been-back"),
-  q("been-vs-gone", 3, "A2", "fix", "Where is Tom? He has been to the shops. (he is still out)", "He has gone to the shops.", ["He has been to the shops.", "He has gone to the shops.", "He have gone to the shops."], "Still out = gone.", "Has gone to the shops.", "gone-still-there"),
+  q("been-vs-gone", 3, "A2", "fix", "Where is Tom? He has been to the shops.", "He has gone to the shops.", ["He has been to the shops.", "He has gone to the shops.", "He have gone to the shops."], "Still out = gone.", "Has gone to the shops.", "gone-still-there"),
   q("been-vs-gone", 4, "A2", "mcq", "Which means the trip is finished and they are back?", "They have been to Italy.", ["They have gone to Italy.", "They have been to Italy.", "They has been to Italy."], "Been = experience / returned.", "Have been to Italy.", "been-back"),
   q("been-vs-gone", 5, "A2", "gap", "The manager ___ to lunch. She'll be back at 2.", "has gone", ["has been", "has gone", "have gone"], "Not here now.", "Has gone to lunch.", "gone-still-there"),
   q("been-vs-gone", 6, "A2", "mcq", "Choose the experience sentence.", "Have you ever been to Prague?", ["Have you ever gone and still there?", "Have you ever been to Prague?", "Has you ever been to Prague?"], "Ever + been for life experience.", "Have you ever been…?", "been-back"),

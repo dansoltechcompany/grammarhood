@@ -1,6 +1,6 @@
 import type { Attempt, Question } from "./types";
 
-const SESSION_SIZE = 8;
+export const SESSION_SIZE = 8;
 
 function lastAttempts(questionId: string, attempts: Attempt[], limit = 5): Attempt[] {
   return attempts.filter((attempt) => attempt.questionId === questionId).slice(-limit);

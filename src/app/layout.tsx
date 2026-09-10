@@ -3,7 +3,7 @@ import { Figtree, Fraunces } from "next/font/google";
 import Link from "next/link";
 import { BrandMark } from "@/components/BrandMark";
 import { SiteFooter } from "@/components/SiteFooter";
-import { SITE_NAME } from "@/lib/site";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const display = Fraunces({
@@ -17,12 +17,18 @@ const sans = Figtree({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: `${SITE_NAME} · English grammar practice for adult learners`,
     template: `%s · ${SITE_NAME}`,
   },
   description:
     "Ten-minute English grammar practice for adult learners. A short rule, mixed questions, and a recap of what you missed.",
+  openGraph: {
+    siteName: SITE_NAME,
+    type: "website",
+    locale: "en",
+  },
 };
 
 export const viewport: Viewport = {

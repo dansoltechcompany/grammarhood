@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { questionsForTopic } from "@/content/questions";
 import { getRelatedLive, getTopic, liveTopics } from "@/content/topics";
+import { SESSION_SIZE } from "@/lib/session";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -29,13 +29,12 @@ export default async function TopicPage({ params }: Props) {
   if (!topic || topic.status !== "live") notFound();
 
   const related = getRelatedLive(topic);
-  const count = questionsForTopic(topic.id).length;
 
   return (
     <article className="space-y-8">
       <header className="space-y-3">
         <p className="text-sm uppercase tracking-[0.16em] text-muted">
-          {topic.level} · {count} questions
+          {topic.level} · {SESSION_SIZE} questions
         </p>
         <h1 className="font-[family-name:var(--font-display)] text-4xl">{topic.title}</h1>
       </header>
@@ -64,7 +63,7 @@ export default async function TopicPage({ params }: Props) {
         href={`/practice?topic=${topic.id}`}
         className="inline-flex rounded-lg bg-accent px-6 py-3 text-sm font-medium text-white hover:bg-accent-dark"
       >
-        Practice this · 8 questions
+        Practice this · {SESSION_SIZE} questions
       </Link>
 
       {related.length > 0 ? (
