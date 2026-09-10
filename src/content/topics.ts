@@ -50,7 +50,7 @@ const live = (topic: Omit<TopicRecord, "status" | "ruleReviewed">): TopicRecord 
 export const TOPIC_RECORDS: TopicRecord[] = [
   {
     id: "a-an-the",
-    title: "A, an, the",
+    title: "Articles: a, an, the",
     level: "A1",
     phase: 1,
     status: "live",
@@ -64,7 +64,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   },
   {
     id: "am-is-are",
-    title: "Am, is, are",
+    title: "The verb be: am, is, are",
     level: "A1",
     phase: 1,
     status: "live",
@@ -263,7 +263,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "going-to",
-    title: "Going to",
+    title: "Going to (future)",
     level: "A1",
     phase: 2,
     keyword: "be going to exercises",
@@ -275,7 +275,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "zero-article",
-    title: "Zero article",
+    title: "Zero article (no a/an/the)",
     level: "A2",
     phase: 2,
     keyword: "zero article no article",
@@ -335,7 +335,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "possessive-s",
-    title: "Possessive 's",
+    title: "Possessive 's (Tom's phone)",
     level: "A1",
     phase: 2,
     keyword: "possessive s exercises",
@@ -407,7 +407,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "used-to",
-    title: "Used to",
+    title: "Used to (past habits)",
     level: "A2",
     phase: 2,
     keyword: "used to exercises",
@@ -600,7 +600,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "dependent-prepositions",
-    title: "Dependent prepositions",
+    title: "Dependent prepositions (interested in, good at)",
     level: "B1",
     phase: 3,
     keyword: "adjective preposition interested in",
@@ -636,7 +636,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "as-as",
-    title: "As … as",
+    title: "As … as (comparisons)",
     level: "A2",
     phase: 3,
     keyword: "as as comparisons",
@@ -816,7 +816,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "was-were",
-    title: "Was / were",
+    title: "Was / were (past of be)",
     level: "A1",
     phase: 3,
     keyword: "was were exercises",
@@ -828,7 +828,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "have-has",
-    title: "Have / has",
+    title: "Have / has (possession)",
     level: "A1",
     phase: 3,
     keyword: "have has exercises",
@@ -973,7 +973,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "so-neither",
-    title: "So / neither",
+    title: "So / neither (agreement)",
     level: "A2",
     phase: 4,
     keyword: "so neither agreement",
