@@ -42,7 +42,7 @@ export function HomeStats() {
           ) : null}
         </div>
         <p className="text-sm text-muted">
-          100 topics · progress stays on this device
+          {live.length} topics · progress stays on this device
           {ready && progress.streakDays > 0 ? ` · ${progress.streakDays}-day streak` : ""}
         </p>
       </section>

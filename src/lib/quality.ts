@@ -1,6 +1,7 @@
 import { QUESTIONS } from "../content/questions";
 import { TOPICS } from "../content/topics";
 import { COPY_SIMILARITY_LIMIT, ruleSimilarity } from "./similarity";
+import { SUB_RULE_LABELS } from "./sub-rule-labels";
 
 type Issue = { level: "error" | "warn"; message: string };
 
@@ -57,6 +58,11 @@ export function checkTopics(): Issue[] {
     }
     if (!question.subRule?.trim()) {
       issues.push({ level: "error", message: `${question.id} is missing subRule.` });
+    } else if (!SUB_RULE_LABELS[question.subRule]) {
+      issues.push({
+        level: "error",
+        message: `${question.id} subRule "${question.subRule}" has no recap label.`,
+      });
     }
     if (!question.prompt?.trim() || !question.answer?.trim()) {
       issues.push({ level: "error", message: `${question.id} is missing prompt or answer.` });
