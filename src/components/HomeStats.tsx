@@ -17,7 +17,7 @@ export function HomeStats() {
   return (
     <div className="space-y-8">
       <section className="space-y-4">
-        <p className="text-sm uppercase tracking-[0.18em] text-muted">Adult English · A1–B1</p>
+        <p className="text-sm uppercase tracking-[0.18em] text-muted">Adult English</p>
         <h1 className="font-[family-name:var(--font-display)] text-4xl leading-tight sm:text-5xl">
           Ten minutes. Then you know what you missed.
         </h1>
