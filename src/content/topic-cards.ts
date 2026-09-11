@@ -509,7 +509,7 @@ export const TOPIC_CARDS: Record<string, TopicCard> = {
     ],
   },
   "have-has": {
-    watchFor: "He, she, and it take has. Everyone else takes have.",
+    watchFor: "He, she, and it take has. After does, use have: Does he have the keys? Keys being plural is not the reason.",
     examples: [
       pair("She has a car.", "She have a car."),
       pair("I have two meetings today.", "I has two meetings today."),
