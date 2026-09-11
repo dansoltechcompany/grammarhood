@@ -64,7 +64,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   },
   {
     id: "am-is-are",
-    title: "The verb be: am, is, are",
+    title: "The Verb Be: Am, Is, Are",
     level: "A1",
     phase: 1,
     status: "live",
@@ -78,7 +78,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   },
   {
     id: "present-simple-vs-continuous",
-    title: "Present simple vs present continuous",
+    title: "Present Simple vs Present Continuous",
     level: "A2",
     phase: 1,
     status: "live",
@@ -92,7 +92,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   },
   {
     id: "past-simple",
-    title: "Past simple",
+    title: "Past Simple",
     level: "A1",
     phase: 1,
     status: "live",
@@ -106,7 +106,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   },
   {
     id: "subject-object-pronouns",
-    title: "Subject vs object pronouns",
+    title: "Subject vs Object Pronouns",
     level: "A1",
     phase: 1,
     status: "live",
@@ -120,7 +120,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   },
   {
     id: "prepositions-of-place",
-    title: "Prepositions of place",
+    title: "Prepositions of Place",
     level: "A1",
     phase: 1,
     status: "live",
@@ -134,7 +134,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   },
   {
     id: "prepositions-of-time",
-    title: "Prepositions of time",
+    title: "Prepositions of Time",
     level: "A1",
     phase: 1,
     status: "live",
@@ -148,7 +148,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   },
   {
     id: "there-is-there-are",
-    title: "There is / there are",
+    title: "There Is / There Are",
     level: "A1",
     phase: 1,
     status: "live",
@@ -162,7 +162,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   },
   {
     id: "comparatives-superlatives",
-    title: "Comparatives and superlatives",
+    title: "Comparatives and Superlatives",
     level: "A2",
     phase: 1,
     status: "live",
@@ -176,7 +176,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   },
   {
     id: "present-perfect-vs-past-simple",
-    title: "Present perfect vs past simple",
+    title: "Present Perfect vs Past Simple",
     level: "A2",
     phase: 1,
     status: "live",
@@ -191,7 +191,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
 
   live({
     id: "present-simple",
-    title: "Present simple",
+    title: "Present Simple",
     level: "A1",
     phase: 2,
     keyword: "present simple exercises",
@@ -203,7 +203,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "present-continuous",
-    title: "Present continuous",
+    title: "Present Continuous",
     level: "A1",
     phase: 2,
     keyword: "present continuous exercises",
@@ -215,7 +215,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "past-continuous",
-    title: "Past continuous",
+    title: "Past Continuous",
     level: "A2",
     phase: 2,
     keyword: "past continuous exercises",
@@ -227,7 +227,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "past-simple-vs-past-continuous",
-    title: "Past simple vs past continuous",
+    title: "Past Simple vs Past Continuous",
     level: "A2",
     phase: 2,
     keyword: "past simple vs past continuous",
@@ -239,7 +239,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "present-perfect",
-    title: "Present perfect",
+    title: "Present Perfect",
     level: "A2",
     phase: 2,
     keyword: "present perfect exercises",
@@ -251,7 +251,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "will-vs-going-to",
-    title: "Will vs going to",
+    title: "Will vs Going to",
     level: "A2",
     phase: 2,
     keyword: "will vs going to",
@@ -263,7 +263,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "going-to",
-    title: "Going to (future)",
+    title: "Going to (Future)",
     level: "A1",
     phase: 2,
     keyword: "be going to exercises",
@@ -275,7 +275,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "zero-article",
-    title: "Zero article (no a/an/the)",
+    title: "Zero Article (No a/an/the)",
     level: "A2",
     phase: 2,
     keyword: "zero article no article",
@@ -287,7 +287,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "some-any",
-    title: "Some / any",
+    title: "Some / Any",
     level: "A1",
     phase: 2,
     keyword: "some any exercises",
@@ -299,7 +299,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "much-many-a-lot-of",
-    title: "Much / many / a lot of",
+    title: "Much / Many / a Lot Of",
     level: "A1",
     phase: 2,
     keyword: "much many a lot of",
@@ -311,7 +311,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "this-that-these-those",
-    title: "This / that / these / those",
+    title: "This / That / These / Those",
     level: "A1",
     phase: 2,
     keyword: "this that these those",
@@ -323,7 +323,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "possessive-adjectives-pronouns",
-    title: "Possessive adjectives vs pronouns",
+    title: "Possessive Adjectives vs Pronouns",
     level: "A1",
     phase: 2,
     keyword: "possessive adjectives vs pronouns",
@@ -335,7 +335,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "possessive-s",
-    title: "Possessive 's (Tom's phone)",
+    title: "Possessive 's (Tom's Phone)",
     level: "A1",
     phase: 2,
     keyword: "possessive s exercises",
@@ -347,7 +347,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "question-formation",
-    title: "Question formation (do / does / did)",
+    title: "Question Formation (Do / Does / Did)",
     level: "A1",
     phase: 2,
     keyword: "question formation do does did",
@@ -359,7 +359,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "countable-uncountable",
-    title: "Countable vs uncountable nouns",
+    title: "Countable vs Uncountable Nouns",
     level: "A1",
     phase: 2,
     keyword: "countable uncountable nouns",
@@ -371,7 +371,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "can-could",
-    title: "Can / could",
+    title: "Can / Could",
     level: "A1",
     phase: 2,
     keyword: "can could exercises",
@@ -383,7 +383,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "must-have-to",
-    title: "Must / have to",
+    title: "Must / Have to",
     level: "A2",
     phase: 2,
     keyword: "must vs have to",
@@ -407,7 +407,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "used-to",
-    title: "Used to (past habits)",
+    title: "Used to (Past Habits)",
     level: "A2",
     phase: 2,
     keyword: "used to exercises",
@@ -419,7 +419,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "for-since",
-    title: "For / since",
+    title: "For / Since",
     level: "A2",
     phase: 2,
     keyword: "for vs since",
@@ -431,7 +431,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "its-vs-its",
-    title: "Its vs it's",
+    title: "Its vs It's",
     level: "A2",
     phase: 2,
     keyword: "its vs it's",
@@ -443,7 +443,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "affect-vs-effect",
-    title: "Affect vs effect",
+    title: "Affect vs Effect",
     level: "B1",
     phase: 2,
     keyword: "affect vs effect",
@@ -455,7 +455,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "fewer-vs-less",
-    title: "Fewer vs less",
+    title: "Fewer vs Less",
     level: "B1",
     phase: 2,
     keyword: "fewer vs less",
@@ -467,7 +467,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "make-vs-do",
-    title: "Make vs do",
+    title: "Make vs Do",
     level: "A2",
     phase: 2,
     keyword: "make vs do",
@@ -479,7 +479,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "say-vs-tell",
-    title: "Say vs tell",
+    title: "Say vs Tell",
     level: "A2",
     phase: 2,
     keyword: "say vs tell",
@@ -491,7 +491,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "good-vs-well",
-    title: "Good vs well",
+    title: "Good vs Well",
     level: "A2",
     phase: 2,
     keyword: "good vs well",
@@ -503,7 +503,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "every-vs-each",
-    title: "Every vs each",
+    title: "Every vs Each",
     level: "A2",
     phase: 2,
     keyword: "every vs each",
@@ -515,7 +515,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "other-another-others",
-    title: "Other / another / others",
+    title: "Other / Another / Others",
     level: "A2",
     phase: 2,
     keyword: "other another others",
@@ -527,7 +527,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "been-vs-gone",
-    title: "Been vs gone",
+    title: "Been vs Gone",
     level: "A2",
     phase: 2,
     keyword: "been vs gone",
@@ -539,7 +539,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "ed-vs-ing-adjectives",
-    title: "Bored vs boring (-ed / -ing)",
+    title: "Bored vs Boring (-ed / -ing)",
     level: "A2",
     phase: 2,
     keyword: "bored vs boring adjectives",
@@ -552,7 +552,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
 
   live({
     id: "already-yet-still",
-    title: "Already / yet / still",
+    title: "Already / Yet / Still",
     level: "A2",
     phase: 3,
     keyword: "already yet still",
@@ -564,7 +564,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "reflexive-pronouns",
-    title: "Reflexive pronouns",
+    title: "Reflexive Pronouns",
     level: "A2",
     phase: 3,
     keyword: "reflexive pronouns myself",
@@ -576,7 +576,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "relative-pronouns",
-    title: "Relative pronouns",
+    title: "Relative Pronouns",
     level: "A2",
     phase: 3,
     keyword: "relative pronouns who which that",
@@ -588,7 +588,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "prepositions-of-movement",
-    title: "Prepositions of movement",
+    title: "Prepositions of Movement",
     level: "A2",
     phase: 3,
     keyword: "prepositions of movement",
@@ -600,7 +600,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "dependent-prepositions",
-    title: "Dependent prepositions (interested in, good at)",
+    title: "Dependent Prepositions (Interested in, Good At)",
     level: "B1",
     phase: 3,
     keyword: "adjective preposition interested in",
@@ -612,7 +612,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "may-might",
-    title: "May / might",
+    title: "May / Might",
     level: "A2",
     phase: 3,
     keyword: "may vs might",
@@ -624,7 +624,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "too-enough",
-    title: "Too / enough",
+    title: "Too / Enough",
     level: "A2",
     phase: 3,
     keyword: "too vs enough",
@@ -636,7 +636,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "as-as",
-    title: "As … as (comparisons)",
+    title: "As … As (Comparisons)",
     level: "A2",
     phase: 3,
     keyword: "as as comparisons",
@@ -648,7 +648,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "adverbs-of-frequency",
-    title: "Adverbs of frequency",
+    title: "Adverbs of Frequency",
     level: "A1",
     phase: 3,
     keyword: "adverbs of frequency",
@@ -660,7 +660,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "gerunds-vs-infinitives",
-    title: "Gerunds vs infinitives",
+    title: "Gerunds vs Infinitives",
     level: "B1",
     phase: 3,
     keyword: "gerund vs infinitive",
@@ -672,7 +672,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "zero-conditional",
-    title: "Zero conditional",
+    title: "Zero Conditional",
     level: "A2",
     phase: 3,
     keyword: "zero conditional",
@@ -684,7 +684,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "first-conditional",
-    title: "First conditional",
+    title: "First Conditional",
     level: "A2",
     phase: 3,
     keyword: "first conditional",
@@ -696,7 +696,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "second-conditional",
-    title: "Second conditional",
+    title: "Second Conditional",
     level: "B1",
     phase: 3,
     keyword: "second conditional",
@@ -708,7 +708,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "passive-present",
-    title: "Passive voice (present)",
+    title: "Passive Voice (Present)",
     level: "B1",
     phase: 3,
     keyword: "present passive",
@@ -720,7 +720,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "passive-past",
-    title: "Passive voice (past)",
+    title: "Passive Voice (Past)",
     level: "B1",
     phase: 3,
     keyword: "past passive",
@@ -732,7 +732,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "future-simple",
-    title: "Future simple (will)",
+    title: "Future Simple (Will)",
     level: "A2",
     phase: 3,
     keyword: "future simple will",
@@ -744,7 +744,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "future-continuous",
-    title: "Future continuous",
+    title: "Future Continuous",
     level: "B1",
     phase: 3,
     keyword: "future continuous",
@@ -756,7 +756,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "past-perfect",
-    title: "Past perfect",
+    title: "Past Perfect",
     level: "B1",
     phase: 3,
     keyword: "past perfect",
@@ -768,7 +768,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "present-perfect-continuous",
-    title: "Present perfect continuous",
+    title: "Present Perfect Continuous",
     level: "B1",
     phase: 3,
     keyword: "present perfect continuous",
@@ -780,7 +780,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "reported-statements",
-    title: "Reported speech (statements)",
+    title: "Reported Speech (Statements)",
     level: "B1",
     phase: 3,
     keyword: "reported speech statements",
@@ -792,7 +792,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "third-conditional",
-    title: "Third conditional",
+    title: "Third Conditional",
     level: "B1",
     phase: 3,
     keyword: "third conditional",
@@ -804,7 +804,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "mixed-conditionals",
-    title: "Mixed conditionals",
+    title: "Mixed Conditionals",
     level: "B2",
     phase: 3,
     keyword: "mixed conditionals",
@@ -816,7 +816,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "was-were",
-    title: "Was / were (past of be)",
+    title: "Was / Were (Past of Be)",
     level: "A1",
     phase: 3,
     keyword: "was were exercises",
@@ -828,7 +828,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "have-has",
-    title: "Have / has (possession)",
+    title: "Have / Has (Possession)",
     level: "A1",
     phase: 3,
     keyword: "have has exercises",
@@ -840,7 +840,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "question-tags",
-    title: "Question tags",
+    title: "Question Tags",
     level: "A2",
     phase: 3,
     keyword: "question tags",
@@ -852,7 +852,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "indirect-questions",
-    title: "Indirect questions",
+    title: "Indirect Questions",
     level: "B1",
     phase: 3,
     keyword: "indirect questions",
@@ -864,7 +864,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "used-to-vs-would",
-    title: "Used to vs would",
+    title: "Used to vs Would",
     level: "B1",
     phase: 3,
     keyword: "used to vs would",
@@ -876,7 +876,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "used-to-vs-be-used-to",
-    title: "Used to vs be used to",
+    title: "Used to vs Be Used to",
     level: "B1",
     phase: 3,
     keyword: "used to vs be used to",
@@ -888,7 +888,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "adjective-vs-adverb",
-    title: "Adjective vs adverb",
+    title: "Adjective vs Adverb",
     level: "A2",
     phase: 3,
     keyword: "adjective vs adverb",
@@ -900,7 +900,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "a-few-vs-a-little",
-    title: "A few vs a little",
+    title: "A Few vs a Little",
     level: "A2",
     phase: 3,
     keyword: "a few vs a little",
@@ -913,7 +913,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
 
   live({
     id: "gerunds-after-verbs",
-    title: "Gerunds after certain verbs",
+    title: "Gerunds After Certain Verbs",
     level: "B1",
     phase: 4,
     keyword: "verbs followed by gerund",
@@ -925,7 +925,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "infinitives-after-verbs",
-    title: "Infinitives after certain verbs",
+    title: "Infinitives After Certain Verbs",
     level: "B1",
     phase: 4,
     keyword: "verbs followed by infinitive",
@@ -937,7 +937,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "linking-words",
-    title: "Linking words",
+    title: "Linking Words",
     level: "A2",
     phase: 4,
     keyword: "because although however",
@@ -949,7 +949,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "despite-in-spite-of",
-    title: "Despite / in spite of",
+    title: "Despite / In Spite Of",
     level: "B1",
     phase: 4,
     keyword: "despite vs in spite of",
@@ -961,7 +961,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "so-vs-such",
-    title: "So vs such",
+    title: "So vs Such",
     level: "A2",
     phase: 4,
     keyword: "so vs such",
@@ -973,7 +973,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "so-neither",
-    title: "So / neither (agreement)",
+    title: "So / Neither (Agreement)",
     level: "A2",
     phase: 4,
     keyword: "so neither agreement",
@@ -985,7 +985,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "wish-if-only",
-    title: "Wish / if only",
+    title: "Wish / If Only",
     level: "B1",
     phase: 4,
     keyword: "wish if only",
@@ -997,7 +997,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "causative",
-    title: "Causative (have/get something done)",
+    title: "Causative (Have/Get Something Done)",
     level: "B1",
     phase: 4,
     keyword: "have something done",
@@ -1009,7 +1009,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "subject-verb-agreement",
-    title: "Subject–verb agreement",
+    title: "Subject–Verb Agreement",
     level: "A2",
     phase: 4,
     keyword: "subject verb agreement",
@@ -1021,7 +1021,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "tricky-uncountables",
-    title: "Tricky uncountables",
+    title: "Tricky Uncountables",
     level: "A2",
     phase: 4,
     keyword: "advice information uncountable",
@@ -1033,7 +1033,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "by-vs-until",
-    title: "By vs until",
+    title: "By vs Until",
     level: "B1",
     phase: 4,
     keyword: "by vs until",
@@ -1045,7 +1045,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "in-time-vs-on-time",
-    title: "In time vs on time",
+    title: "In Time vs On Time",
     level: "B1",
     phase: 4,
     keyword: "in time vs on time",
@@ -1057,7 +1057,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "at-the-end-vs-in-the-end",
-    title: "At the end vs in the end",
+    title: "At the End vs In the End",
     level: "B1",
     phase: 4,
     keyword: "at the end vs in the end",
@@ -1069,7 +1069,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "during-vs-while",
-    title: "During vs while",
+    title: "During vs While",
     level: "A2",
     phase: 4,
     keyword: "during vs while",
@@ -1081,7 +1081,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "who-vs-whom",
-    title: "Who vs whom",
+    title: "Who vs Whom",
     level: "B1",
     phase: 4,
     keyword: "who vs whom",
@@ -1093,7 +1093,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "like-vs-as",
-    title: "Like vs as",
+    title: "Like vs As",
     level: "B1",
     phase: 4,
     keyword: "like vs as",
@@ -1105,7 +1105,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "bring-vs-take",
-    title: "Bring vs take",
+    title: "Bring vs Take",
     level: "A2",
     phase: 4,
     keyword: "bring vs take",
@@ -1117,7 +1117,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "borrow-vs-lend",
-    title: "Borrow vs lend",
+    title: "Borrow vs Lend",
     level: "A2",
     phase: 4,
     keyword: "borrow vs lend",
@@ -1129,7 +1129,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "see-watch-look",
-    title: "See / watch / look",
+    title: "See / Watch / Look",
     level: "A2",
     phase: 4,
     keyword: "see vs watch vs look",
@@ -1141,7 +1141,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "hear-vs-listen",
-    title: "Hear vs listen",
+    title: "Hear vs Listen",
     level: "A2",
     phase: 4,
     keyword: "hear vs listen",
@@ -1153,7 +1153,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "phrasal-verbs",
-    title: "High-frequency phrasal verbs",
+    title: "High-Frequency Phrasal Verbs",
     level: "A2",
     phase: 4,
     keyword: "phrasal verbs exercises",
@@ -1165,7 +1165,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "so-that-in-order-to",
-    title: "So that / in order to",
+    title: "So That / In Order to",
     level: "B1",
     phase: 4,
     keyword: "so that in order to",
@@ -1177,7 +1177,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "would-rather-had-better",
-    title: "Would rather / had better",
+    title: "Would Rather / Had Better",
     level: "B1",
     phase: 4,
     keyword: "would rather had better",
@@ -1189,7 +1189,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "stop-remember-gerund-infinitive",
-    title: "Stop / remember + gerund vs infinitive",
+    title: "Stop / Remember + Gerund vs Infinitive",
     level: "B1",
     phase: 4,
     keyword: "stop remember gerund infinitive",
@@ -1201,7 +1201,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "who-which-that",
-    title: "Who / which / that",
+    title: "Who / Which / That",
     level: "A2",
     phase: 4,
     keyword: "who which that",
@@ -1213,7 +1213,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "first-vs-second-conditional",
-    title: "First vs second conditional",
+    title: "First vs Second Conditional",
     level: "B1",
     phase: 4,
     keyword: "first vs second conditional",
@@ -1225,7 +1225,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "present-perfect-vs-present-perfect-continuous",
-    title: "Present perfect vs present perfect continuous",
+    title: "Present Perfect vs Present Perfect Continuous",
     level: "B1",
     phase: 4,
     keyword: "present perfect vs present perfect continuous",
@@ -1237,7 +1237,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "reported-questions",
-    title: "Reported questions",
+    title: "Reported Questions",
     level: "B1",
     phase: 4,
     keyword: "reported questions",
@@ -1249,7 +1249,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "lay-vs-lie",
-    title: "Lay vs lie",
+    title: "Lay vs Lie",
     level: "B1",
     phase: 4,
     keyword: "lay vs lie",
@@ -1261,7 +1261,7 @@ export const TOPIC_RECORDS: TopicRecord[] = [
   }),
   live({
     id: "future-perfect",
-    title: "Future perfect",
+    title: "Future Perfect",
     level: "B2",
     phase: 4,
     keyword: "future perfect",

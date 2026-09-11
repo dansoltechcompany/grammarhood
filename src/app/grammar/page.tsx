@@ -4,7 +4,7 @@ import { liveTopics } from "@/content/topics";
 import type { Level } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: "Grammar topics",
+  title: "Grammar Topics",
   description: "English grammar topics. One short rule per page, then eight questions.",
   robots: { index: true, follow: true },
 };
@@ -17,7 +17,7 @@ export default function GrammarIndexPage() {
   return (
     <div className="space-y-10">
       <header className="space-y-2">
-        <h1 className="font-[family-name:var(--font-display)] text-4xl">Grammar topics</h1>
+        <h1 className="font-[family-name:var(--font-display)] text-4xl">Grammar Topics</h1>
         <p className="max-w-xl text-copy">
           One page per topic: a short rule, then eight questions. {live.length} live now.
         </p>
