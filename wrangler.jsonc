@@ -15,7 +15,7 @@
     }
   ],
   "routes": [
-    { "pattern": "grammarhood.com", "custom_domain": true },
-    { "pattern": "www.grammarhood.com", "custom_domain": true }
+    { "pattern": "grammarhood.com/*", "zone_name": "grammarhood.com" },
+    { "pattern": "www.grammarhood.com/*", "zone_name": "grammarhood.com" }
   ]
 }

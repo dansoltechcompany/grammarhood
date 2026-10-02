@@ -27,6 +27,6 @@ Draft topic URLs 404 and are omitted from `sitemap.xml`.
 
 Public URLs are `https://grammarhood.com/...`.
 
-`http://` and `www.` 301 to that host. The worker has to be attached to both `grammarhood.com` and `www.grammarhood.com` (`wrangler.jsonc` routes). Until `www` is attached, Cloudflare answers `www` with a 522 and the redirect never runs.
+`http://` and `www.` 301 to that host. Both hostnames are worker routes in `wrangler.jsonc`, so `www` is answered by the app instead of Cloudflare error 522.
 
 Each indexable page sets its own canonical. `/practice` and `/recap` stay `noindex`. The sitemap lists only the pages that should be indexed, with no rotating `lastmod`.
