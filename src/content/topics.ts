@@ -1301,3 +1301,16 @@ export function getRelatedLive(topic: Topic): Topic[] {
     .map((id) => getTopic(id))
     .filter((item): item is Topic => item !== undefined && item.status === "live");
 }
+
+/** Related topics plus sisters, live only, de-duplicated. Used for internal links. */
+export function getLinkedLive(topic: Topic): Topic[] {
+  const seen = new Set<string>([topic.id]);
+  const linked: Topic[] = [];
+  for (const id of [...topic.related, ...topic.sisters]) {
+    if (seen.has(id)) continue;
+    seen.add(id);
+    const item = getTopic(id);
+    if (item && item.status === "live") linked.push(item);
+  }
+  return linked;
+}

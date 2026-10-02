@@ -24,10 +24,14 @@ export const metadata: Metadata = {
   },
   description:
     "Ten-minute English grammar practice for adult learners. A short rule, mixed questions, and a recap of what you missed.",
+  robots: { index: true, follow: true },
   openGraph: {
     siteName: SITE_NAME,
     type: "website",
-    locale: "en",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
   },
 };
 

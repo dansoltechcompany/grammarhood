@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { COMPANY_NAME, CONTACT_EMAIL, SITE_NAME } from "@/lib/site";
+import { COMPANY_NAME, CONTACT_EMAIL, indexableMeta, SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms",
   description: `Terms of use for ${SITE_NAME}.`,
+  ...indexableMeta("/terms"),
 };
 
 export default function TermsPage() {

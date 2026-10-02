@@ -1,10 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { HomeSampleQuestion } from "@/components/HomeSampleQuestion";
 import { HomeStats } from "@/components/HomeStats";
+import { JsonLd } from "@/components/JsonLd";
 import { TopicList } from "@/components/TopicList";
 import { QUESTIONS } from "@/content/questions";
 import { liveTopics } from "@/content/topics";
-import type { Topic } from "@/lib/types";
+import { absoluteUrl, COMPANY_NAME, indexableMeta, SITE_NAME, SITE_URL } from "@/lib/site";
+import type { Level, Topic } from "@/lib/types";
 
 const SAMPLE_QUESTION_ID = "art-01";
 
@@ -37,6 +40,12 @@ const STEPS = [
   },
 ] as const;
 
+const LEVELS: Level[] = ["A1", "A2", "B1", "B2"];
+
+export const metadata: Metadata = {
+  ...indexableMeta("/"),
+};
+
 export default function HomePage() {
   const live = liveTopics();
   const startHere = START_HERE_IDS.map((id) => live.find((topic) => topic.id === id)).filter(
@@ -46,6 +55,18 @@ export default function HomePage() {
 
   return (
     <div className="space-y-16">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: SITE_NAME,
+          url: absoluteUrl("/"),
+          description:
+            "Ten-minute English grammar practice for adult learners. A short rule, mixed questions, and a recap of what you missed.",
+          inLanguage: "en",
+          publisher: { "@type": "Organization", name: COMPANY_NAME, url: SITE_URL },
+        }}
+      />
       <HomeStats />
 
       <section>
@@ -88,6 +109,25 @@ export default function HomePage() {
         >
           Practice 10 minutes
         </Link>
+      </section>
+
+      <section className="space-y-8">
+        <div>
+          <h2 className="font-[family-name:var(--font-display)] text-2xl">Every topic</h2>
+          <p className="mt-1 text-sm text-muted">
+            {live.length} lessons. Each one is a rule, a few worked examples, then eight questions.
+          </p>
+        </div>
+        {LEVELS.map((level) => {
+          const topics = live.filter((topic) => topic.level === level);
+          if (topics.length === 0) return null;
+          return (
+            <div key={level} className="space-y-3">
+              <h3 className="font-[family-name:var(--font-display)] text-xl">{level}</h3>
+              <TopicList topics={topics} />
+            </div>
+          );
+        })}
       </section>
     </div>
   );

@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "tsx scripts/check-topics.ts && next build",
+    "build": "tsx scripts/check-topics.ts && tsx scripts/check-canonical.ts && next build",
     "start": "next start",
     "lint": "eslint",
     "check:topics": "tsx scripts/check-topics.ts",
+    "check:canonical": "tsx scripts/check-canonical.ts",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
   },

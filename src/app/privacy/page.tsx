@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { COMPANY_NAME, CONTACT_EMAIL, SITE_NAME } from "@/lib/site";
+import { COMPANY_NAME, CONTACT_EMAIL, indexableMeta, SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy",
   description: `How ${SITE_NAME} handles your information.`,
+  ...indexableMeta("/privacy"),
 };
 
 export default function PrivacyPage() {

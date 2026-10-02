@@ -13,5 +13,9 @@
       "binding": "WORKER_SELF_REFERENCE",
       "service": "grammarhood"
     }
+  ],
+  "routes": [
+    { "pattern": "grammarhood.com", "custom_domain": true },
+    { "pattern": "www.grammarhood.com", "custom_domain": true }
   ]
 }

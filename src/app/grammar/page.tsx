@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/JsonLd";
 import { TopicList } from "@/components/TopicList";
 import { liveTopics } from "@/content/topics";
+import { absoluteUrl, indexableMeta, SITE_NAME } from "@/lib/site";
 import type { Level } from "@/lib/types";
 
 export const metadata: Metadata = {
   title: "Grammar Topics",
   description: "English grammar topics. One short rule per page, then eight questions.",
-  robots: { index: true, follow: true },
+  ...indexableMeta("/grammar"),
 };
 
 const LEVELS: Level[] = ["A1", "A2", "B1", "B2"];
@@ -16,6 +18,20 @@ export default function GrammarIndexPage() {
 
   return (
     <div className="space-y-10">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: `${SITE_NAME} grammar topics`,
+          numberOfItems: live.length,
+          itemListElement: live.map((topic, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: topic.title,
+            url: absoluteUrl(`/grammar/${topic.id}`),
+          })),
+        }}
+      />
       <header className="space-y-2">
         <h1 className="font-[family-name:var(--font-display)] text-4xl">Grammar Topics</h1>
         <p className="max-w-xl text-copy">
